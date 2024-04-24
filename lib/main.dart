@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import './firebase_options.dart';
 
 // auth screens
-import './auth/login_or_register.dart';
+import './auth/auth.dart';
 
 // themes
 import './theme/light_mode.dart';
@@ -24,9 +24,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightMode,
       darkTheme: darkMode,
-      home: const LoginOrRegister(),
+      home: const AuthScreen(),
     );
   }
 }
 
-// https://www.youtube.com/watch?v=0RWLaJxW7Oc&t=98s&ab_channel=MitchKoko 21:10
+// https://www.youtube.com/watch?v=0RWLaJxW7Oc&t=98s&ab_channel=MitchKoko 36:39
