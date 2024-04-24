@@ -29,4 +29,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// https://www.youtube.com/watch?v=0RWLaJxW7Oc&t=98s&ab_channel=MitchKoko 36:39
+// https://www.youtube.com/watch?v=0RWLaJxW7Oc&t=98s&ab_channel=MitchKoko 39:01
