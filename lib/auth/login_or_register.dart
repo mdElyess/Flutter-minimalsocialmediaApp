@@ -5,6 +5,8 @@ import '../screens/login_screen.dart';
 import '../screens/register_screen.dart';
 
 class LoginOrRegister extends StatefulWidget {
+  static String screenId = '/profile_screen';
+
   const LoginOrRegister({super.key});
 
   @override

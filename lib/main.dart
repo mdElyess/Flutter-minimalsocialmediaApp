@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import './firebase_options.dart';
 
+// screens
+import './auth/login_or_register.dart';
+import './screens/home_screen.dart';
+import './screens/profile_screen.dart';
+import './screens/users_screen.dart';
+
 // auth screens
 import './auth/auth.dart';
 
@@ -21,12 +27,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Social Media App",
       debugShowCheckedModeBanner: false,
       theme: lightMode,
       darkTheme: darkMode,
-      home: const AuthScreen(),
+      initialRoute: AuthScreen.screenId,
+      routes: {
+        AuthScreen.screenId: (context) => const AuthScreen(),
+        LoginOrRegister.screenId: (context) => const LoginOrRegister(),
+        HomeScreen.screenId: (context) => const HomeScreen(),
+        ProfileScreen.screenId: (context) => const ProfileScreen(),
+        UsersScreen.screenId: (context) => const UsersScreen(),
+      },
     );
   }
 }
 
-// https://www.youtube.com/watch?v=0RWLaJxW7Oc&t=98s&ab_channel=MitchKoko 39:01
+// https://www.youtube.com/watch?v=0RWLaJxW7Oc&ab_channel=MitchKoko 46:30

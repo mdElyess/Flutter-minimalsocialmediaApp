@@ -4,6 +4,8 @@ import '../auth/login_or_register.dart';
 import '../screens/home_screen.dart';
 
 class AuthScreen extends StatelessWidget {
+  static String screenId = '/auth_screen';
+
   const AuthScreen({super.key});
 
   @override
@@ -14,7 +16,7 @@ class AuthScreen extends StatelessWidget {
         builder: (context, snapshot) {
           // user is logged in
           if (snapshot.hasData) {
-            return HomeScreen();
+            return const HomeScreen();
           }
 
           // user is NOT logged in
