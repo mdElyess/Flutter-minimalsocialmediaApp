@@ -35,12 +35,12 @@ class MyApp extends StatelessWidget {
       routes: {
         AuthScreen.screenId: (context) => const AuthScreen(),
         LoginOrRegister.screenId: (context) => const LoginOrRegister(),
-        HomeScreen.screenId: (context) => const HomeScreen(),
-        ProfileScreen.screenId: (context) => const ProfileScreen(),
+        HomeScreen.screenId: (context) => HomeScreen(),
+        ProfileScreen.screenId: (context) => ProfileScreen(),
         UsersScreen.screenId: (context) => const UsersScreen(),
       },
     );
   }
 }
 
-// https://www.youtube.com/watch?v=0RWLaJxW7Oc&ab_channel=MitchKoko 46:30
+// https://www.youtube.com/watch?v=0RWLaJxW7Oc&ab_channel=MitchKoko 46:51

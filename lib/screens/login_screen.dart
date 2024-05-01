@@ -52,12 +52,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Scaffold(
-          backgroundColor: Theme.of(context).colorScheme.background,
-          body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(25.0),
+    return Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -135,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
             ),
-          )),
-    );
+          ),
+        ));
   }
 }
